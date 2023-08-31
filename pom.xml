@@ -43,7 +43,8 @@
     <build>
         <resources>
             <resource>
-                <directory>${project.build.directory}/lib</directory></resource>
+                <directory>${project.build.directory}/lib</directory>
+            </resource>
         </resources>
         <plugins>
             <!-- Usual compilation -->
@@ -106,8 +107,6 @@
                 <configuration>
                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
                     <includeScope>compile</includeScope>
-
-
                 </configuration>
                 <executions>
                     <execution>
