@@ -44,6 +44,7 @@
         <resources>
             <resource>
                 <directory>${project.build.directory}/lib</directory>
+                <targetPath>lib/</targetPath>
             </resource>
         </resources>
         <plugins>
@@ -91,7 +92,9 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
+
                         </manifest>
                         <manifestEntries>
                             <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
